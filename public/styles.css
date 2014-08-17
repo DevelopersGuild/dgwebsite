@@ -1,0 +1,56 @@
+.container {
+    text-align: center;
+    display: block;
+    width:100%;
+}
+
+.pane {
+    height:100%;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.landing {
+    top:0%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("http://news.theregistrysf.com/wp-content/uploads/2013/04/DeAnza_MLC_Ext_03_A.jpg");
+}
+
+.logo {
+    margin-top:50px;
+}
+
+.tagline {
+    margin-top: 40px;
+}
+
+.tagline > h1 {
+    font-size: 2.2em;
+    line-height: 1.4em;
+    color:white;
+    opacity: 1
+}
+
+.landing .button {
+    padding: 5px 30px;
+/*    border-radius: 5px;*/
+    border: 7px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(50, 33, 190, 0.7);
+    color: white;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.landing .button:hover {
+    background-color: gray;
+}
+
+
+.intro {
+    top:100%;
+}
