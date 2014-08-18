@@ -1,8 +1,9 @@
 <html>
     <head>
-        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../resources/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../resources/animate.min.css">
         <!-- SEO needed. -->
         <title>Developers' Guild Homepage</title>
     </head>
@@ -28,9 +29,9 @@
             <div class="row intro">
                 <div class="pane">
                     <div class="col-md-8 col-md-offset-2">
-                        <div class="col-md-6 suave"><p>We fuel the passion found in computer science students and keep the learning experience fresh.</p>
+                        <div class="col-md-6 suave wow fadeInLeft"><p>We fuel the passion found in computer science students and keep the learning experience fresh.</p>
                         </div>
-                        <div class="col-md-6 suave"><p>We gather students at De Anza College to build new apps and software that they dream up.</p>
+                        <div class="col-md-6 suave wow fadeInRight"><p>We gather students at De Anza College to build new apps and software that they dream up.</p>
                         </div>
                     </div>
                 </div>
@@ -60,9 +61,10 @@
             
         </div>
 
-        <script src="jqueryLibs/jquery-2.1.1.min.js"></script>
+        <script src="../resources/jqueryLibs/jquery-2.1.1.min.js"></script>
         <script src="bootstrap/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../resources/scrollReveal.js"></script>
+        <script src="../resources/wow.min.js"></script>
+        <script>new WOW().init();</script>
     </body>
 
 </html>
