@@ -35,9 +35,9 @@ body {
     margin-top: 40px;
 }
 
-.tagline > h1 {
+.tagline h1 {
     font-size: 2.6em;
-    line-height: 1.4em;
+    line-height: 0.8em;
     color:white;
     
     opacity: 1
@@ -55,6 +55,14 @@ body {
 
 .landing .button:hover {
     background-color: green;
+}
+
+/*override flexslider style*/
+.flexslider {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin: 0px;
 }
 
 .intro {
