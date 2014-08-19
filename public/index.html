@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../resources/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../resources/flexslider/flexslider.css">
         <link rel="stylesheet" href="css/styles.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../resources/animate.min.css">
@@ -19,6 +20,17 @@
                         </div>
                         <div class="tagline">
                             <h1>Developer's Guild is <span style="font-style:italic">the</span> community for hacking on projects at De Anza College</h1> 
+                            <!-- <h1>Developer's Guild is <span style="font-style:italic">the</span> community for hacking on projects at De Anza College.</h1>  -->
+                            <h1>Come to</h1>
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li><h1>hack on projects</h1></li>
+                                    <li><h1>fuel your passion</h1></li>
+                                    <li><h1>keep your learning experience fresh</h1></li>
+                                </ul>
+                            </div>
+                            <h1>at De Anza College.</h1>
+
                         </div>
                         <a href><div class="button">
                             <h2>join us</h2>
@@ -70,9 +82,20 @@
         </div>
 
         <script src="../resources/jqueryLibs/jquery-2.1.1.min.js"></script>
-        <script src="bootstrap/bootstrap.min.js"></script>
+        <script src="../resources/flexslider/jquery.flexslider-min.js"></script>
+        <script src="../resources/bootstrap/bootstrap.min.js"></script>
         <script src="../resources/wow.min.js"></script>
-        <script>new WOW().init();</script>
+        <script>
+            new WOW().init();
+            $(window).load(function() {
+                $('.flexslider').flexslider({
+                    slideshowSpeed: 700,
+                    animationSpeed: 50,
+                    controlNav: false,
+                    directionNav: false, 
+                });
+            });
+        </script>
     </body>
 
 </html>
