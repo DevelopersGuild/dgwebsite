@@ -163,14 +163,14 @@
             });
 
             
+            //go to top button function
             $("#gotop").mouseenter(function(){
                $("#gotop").fadeTo("fast", 0.8);
             }); 
             $("#gotop").mouseleave(function(){
                $("#gotop").fadeTo("fast", 0.3);  
             });
-    
-            
+               
             $(window).scroll(function() {
               if ($(this).scrollTop() > 2200){
                 $('#gotop').fadeIn("fast");
@@ -179,7 +179,6 @@
               }
             });
             
-
             $("#gotop").click(function(){
                 $("html, body").animate({ scrollTop: 0}, 1000);
             });
