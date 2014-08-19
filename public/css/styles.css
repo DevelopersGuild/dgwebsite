@@ -9,7 +9,7 @@ body {
 }
 
 .pane {
-    height: 100%;
+    height: 80%;
 
 }
 
@@ -25,6 +25,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-image: url("http://news.theregistrysf.com/wp-content/uploads/2013/04/DeAnza_MLC_Ext_03_A.jpg");
+    height: 130%;
 }
 
 .logo {
@@ -71,7 +72,8 @@ body {
 
 .intro {
     top:100%;
-    height: 25%;
+    height: 40%;
+    font-size: 1em;
     /*background-color: rgba(255, 255, 255, 0.7);*/
 }
 
@@ -80,9 +82,10 @@ body {
     font-size: 1.45em;
     font-weight:300;
     padding: 50px 0px;
-    margin: 0px;
+    margin: auto;
     /*border-bottom: 10px solid gray;*/
     display: inline-block;
+
 }
 
 .overlay_white {
@@ -93,7 +96,8 @@ body {
 
 .traits {
     top:200%;
-    height:75%; /*why 110%?*/
+    height: 100%; /*why 110%?*/  
+    /*I feel 75% is too narraw for two-lines logo -Buce*/
     background-size: cover;
     background-attachment: fixed;
     /*-webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px);*/
@@ -102,15 +106,14 @@ body {
 }
 
 .single_trait {
-    padding:20px;
+    padding: 20px;
     /*background-color: white;*/
-    height:50%;
+    height: 55%;
 }
 
 .single_trait > img {
     margin-top:30px;
     border-radius: 100px;
-
     background-color: #fff;
     opacity: 0.8;
 }
@@ -119,22 +122,26 @@ body {
     font-size: 2em;
     color:white;
     margin-top: 15px;
-
+    letter-spacing: 1px;
     font-weight: 300;
 }
 
 .faq_title {
     background-color: white;
-    height:15%;
+    height: 20%;
+    font-size: 1.5em;
+    color: #e91e63;
 }
 
-.faq_title > h2 {
+/*.faq_title > h2 {
     margin-top: 50px;
     font-size: 2em;
+    color: #e91e63;
 }
+*/
 
 .faq {
-    height:85%;
+    height: 100%;
     background-image: url("https://pdm.me/us.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -166,7 +173,7 @@ body {
 }
 
 .ping-us {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .ping-us_title > p {
@@ -176,6 +183,7 @@ body {
 
 .ping-us_hi > img {
     border-radius: 100px;
+    opacity: 0.8;
 }
 
 .ping-us_email {
@@ -189,14 +197,13 @@ body {
     font-size: 1.5em;
 }
 
-/****~~~~~~*****??????*/
+/*traits logo position settings*/
 .placehold {
     width: 150px;
     height: 150px;
     border-radius: 100px;
     background-color: #fff;
     opacity: 0.8;
-
     padding-left: 35px;
     padding-top: 35px;
     padding-right: 35px;
@@ -204,4 +211,17 @@ body {
     margin-left: 110px;
     margin-top: 30px;
 
+}
+
+#gotop {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    border-radius: 100px;
+    opacity: 0.2;
+    right: 20px;
+    bottom: 20px;
+    background-color: #90a4ae;
+    cursor: pointer;
 }

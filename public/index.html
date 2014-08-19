@@ -39,7 +39,9 @@
 
             <div class="row intro">
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="suave wow fadeInLeft"><p>Developer's Guild is <span style="font-style:italic">the</span> community for hacking on projects at De Anza College.</p><p>We gather students at De Anza College to build new apps and software that they dream up.</p>
+                    <div class="suave wow fadeInLeft" style="margin-top: 50px;">
+                    <p style="padding-left: 55px;">Developer's Guild is <span style="font-style:italic">the</span> community for hacking on projects at De Anza College.</p>
+                    <p style="width: 820px;">We gather students at De Anza College to build new apps and software that they dream up.</p>
                     </div>
                    <!--  <div class="col-md-6 suave wow fadeInRight"><p>We gather students at De Anza College to build new apps and software that they dream up.</p>
                     </div> -->
@@ -47,7 +49,7 @@
             </div>
 
             <div class="row traits">
-                <div class="overlay"><div class="pane col-md-8 col-md-offset-2">
+                <div class="overlay"><div class="pane col-md-8 col-md-offset-2" style="margin-top: 40px;">
                     <div class="col-md-6 single_trait">
                         <div class="placehold">
                            <img src="../resources/deanza.png" alt="" style="width: 55px">
@@ -58,29 +60,32 @@
                         <div class="placehold">
                            <img src="../resources/calendar.png" alt="">
                         </div>
-                        <p>Every week</p>
+                        <p>Every Week</p>
                     </div>
-                    <div class="col-md-6 single_trait">
+                    <div class="col-md-6 single_trait" style="padding-top: 0px;">
                         <div class="placehold">
                            <img src="../resources/tools.png" alt="">
                         </div>
-                        <p>Create and join projects</p>
+                        <p>Create and Join Projects</p>
                     </div>
-                    <div class="col-md-6 single_trait">
+                    <div class="col-md-6 single_trait" style="padding-top: 0px;">
                         <div class="placehold">
                            <img src="../resources/friends.png" alt="">
                         </div>
-                        <p>Make friends</p>
+                        <p>Make Friends</p>
                     </div>
                 </div></div>
             </div>
-
-            <div class="row faq_title">
-                <h2>Frequently Asked Questions (FAQ)</h2>
+            
+            <div class="suave wow fadeInLeft">
+               <div class="row faq_title" style="margin-top: 15px; padding-top: 40px;">
+                 <p>Frequently Asked Questions (FAQ)</p>
+               </div>
             </div>
+            
             <div class="row faq">
                 <div class="overlay">
-                <div class="pane col-md-10 col-md-offset-1">
+                <div class="pane col-md-10 col-md-offset-1" style="margin-top: 10px;">
                     <div class="col-md-6">
                         <div class="single_faq">
                             <p class="faq_q">Q: I don't have a programming background.  Can I join?</p>
@@ -114,10 +119,10 @@
             </div>
 
             <div class="row ping-us">
-                <div class="pane">
+                <div class="pane" style="height: 60%;">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="col-md-12 ping-us_title">
-                            <p>Ping us!</p>
+                            <p style="color: #1de9b6;">Ping Us!</p>
                         </div>
                         <div class="col-md-6 ping-us_hi">
                             <img src="http://placehold.it/200x200" alt="">
@@ -128,9 +133,14 @@
                     </div>
                 </div>
             </div>
-
+ 
+            <div id="gotop">
+                <img src="../resources/up.png" style="padding-top: 15px;">
+            </div>
 
         </div>
+
+
 
         <script src="../resources/jqueryLibs/jquery-2.1.1.min.js"></script>
         <script src="../resources/flexslider/jquery.flexslider-min.js"></script>
@@ -150,6 +160,28 @@
                 $('.landing').parallax("30%", .5);
                 $('.traits').parallax("30%", .5);
                 $('.faq').parallax("30%", .5);
+            });
+
+            
+            $("#gotop").mouseenter(function(){
+               $("#gotop").fadeTo("fast", 0.8);
+            }); 
+            $("#gotop").mouseleave(function(){
+               $("#gotop").fadeTo("fast", 0.3);  
+            });
+    
+            
+            $(window).scroll(function() {
+              if ($(this).scrollTop() > 2200){
+                $('#gotop').fadeIn("fast");
+              } else {
+                $('#gotop').stop().fadeOut("fast");
+              }
+            });
+            
+
+            $("#gotop").click(function(){
+                $("html, body").animate({ scrollTop: 0}, 1000);
             });
         </script>
     </body>
