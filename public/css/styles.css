@@ -21,9 +21,10 @@ body {
 
 .landing {
     top:0%;
-    height: 770px;
+    /*height: 770px;*/
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     background-image: url("http://news.theregistrysf.com/wp-content/uploads/2013/04/DeAnza_MLC_Ext_03_A.jpg");
 }
 
@@ -63,18 +64,20 @@ body {
     color: white;
     border: none;
     margin: 0px;
+    font-family:Courier;
+    font-size:1.0em;
 }
 
 .intro {
     top:100%;
-    height: 50%;
+    height: 25%;
     /*background-color: rgba(255, 255, 255, 0.7);*/
 }
 
 .suave {
     text-align: left;
     font-size: 1.35em;
-    padding: 110px 10px 10px 10px;
+    padding: 50px 0px;
     margin: 5px 0px;
     /*border-bottom: 10px solid gray;*/
     display: inline-block;
@@ -88,10 +91,11 @@ body {
 
 .traits {
     top:200%;
-    height:90%;
+    height:75%;
     background-size: cover;
     background-attachment: fixed;
     /*-webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px);*/
+    background-position: center;
     background-image: url("http://c.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/02/3026601-poster-p-1-10-steps-to-pulling-off-a-killer-hardware-hackathon.jpg");
 }
 
@@ -110,4 +114,66 @@ body {
     font-size: 2em;
     color:white;
     margin-top: 15px;
+}
+
+.faq_title {
+    background-color: white;
+    height:15%;
+}
+
+.faq_title > h2 {
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+.faq {
+    height:85%;
+    background-image: url("https://pdm.me/us.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.single_faq {
+    margin: 30px 0px;
+    padding:40px;
+    background-color: rgba(232, 250, 255, 0.8);
+    border-radius: 5px;
+    text-align: left;
+    /*border: 10px solid rgba(0, 0, 0, 0.7);*/
+}
+
+.single_faq > p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color:black;
+}
+
+.faq_q {
+    border-left: 8px solid rgb(92, 135, 222);
+    padding-left: 10px;
+}
+
+.ping-us {
+    margin-top: 30px;
+}
+
+.ping-us_title > p {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.ping-us_hi > img {
+    border-radius: 100px;
+}
+
+.ping-us_email {
+    height: 200px;
+    vertical-align: middle;
+}
+
+.ping-us_email > p {
+    height: 200px;
+    vertical-align: middle;
+    font-size: 1.5em;
 }
