@@ -14,7 +14,7 @@ body {
 }
 
 .overlay {
-    background-color: rgba(50, 100, 100, 0.5);
+    background-color: rgba(120, 118, 113, 0.5);
     width: 100%;
     height: 100%;
 }
@@ -96,7 +96,7 @@ body {
     font-size: 1em;
     color:white;
     /*background-color: rgba(34, 49, 59, 1);*/
-    background-color: rgba(150, 173, 178, 1);
+    background-color: rgba(42, 60, 82, 1);
     box-shadow: 0 0 1em black;
     border-top: rgb(214,214,214) 12px solid;
     border-bottom: rgb(37, 38, 44) 10px solid;
@@ -120,6 +120,7 @@ body {
 }
 
 .traits {
+    text-align: center;
     top:200%;
     height: 100%; /*why 110%?*/  
     /*I feel 75% is too narraw for two-lines logo -Buce*/
@@ -128,17 +129,18 @@ body {
     /*-webkit-filter: blur(3px); -moz-filter: blur(3px); -o-filter: blur(3px); -ms-filter: blur(3px); filter: blur(3px);*/
     background-position: center;
     /*background-image: url("http://c.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/02/3026601-poster-p-1-10-steps-to-pulling-off-a-killer-hardware-hackathon.jpg");*/
-    background-color: rgb(89, 112, 122);
+    background-color: rgb(160, 176, 196);
 }
 
 .single_trait {
-    padding: 20px;
+    padding:;
     /*background-color: white;*/
-    height: 55%;
+    height: 50%;
+    text-align: center;
 }
 
 .single_trait > img {
-    margin-top:30px;
+    margin-top:50px;
     border-radius: 100px;
     background-color: #fff;
     opacity: 1;
@@ -153,10 +155,15 @@ body {
 }
 
 .faq_title {
-    background-color: white;
-    height: 20%;
-    font-size: 1.5em;
-    color: #e91e63;
+    background-color: rgb(255, 255, 255);
+    height: 30%;
+    font-size: 2em;
+    font-weight: 300;
+    color: #000000;
+    /* border-top: rgb(74, 77, 80) solid 10px; */
+    /* box-shadow: 0 20px 20px -20px black; */
+    box-shadow: 0 0px 35px black;
+    border-bottom: rgb(180, 180, 180) solid 10px;
 }
 
 /*.faq_title > h2 {
@@ -177,7 +184,7 @@ body {
 .single_faq {
     margin: 30px 0px;
     padding:40px;
-    background-color: rgba(232, 250, 255, 0.8);
+    background-color: rgba(255,249,237, 0.8);
     border-radius: 5px;
     text-align: left;
     /*border: 10px solid rgba(0, 0, 0, 0.7);*/
@@ -225,8 +232,8 @@ body {
 
 /*traits logo position settings*/
 .placehold {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 100px;
     background-color: #fff;
     opacity: 0.8;
