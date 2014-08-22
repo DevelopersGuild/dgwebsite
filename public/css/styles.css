@@ -256,8 +256,8 @@ body {
 /* go to top button design*/
 #gotop {
     display: none;
-    width: 50px;
-    height: 50px;
+    width: 3.5%;
+    height: 6.8%;
     position: fixed;
     border-radius: 100px;
     opacity: 0.2;
