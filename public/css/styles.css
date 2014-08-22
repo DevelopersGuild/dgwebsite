@@ -258,18 +258,14 @@ body {
 /* go to top button design*/
 #gotop {
     display: none;
-    /*
-    width: 3.5%;
-    height: 6.8%;
-    */
     position: fixed;
+    width: 4%;
+    height:0;
     opacity: 0.2;
     right: 20px;
     bottom: 20px;
     background-color: #90a4ae;
     cursor: pointer;
-    width: 4%;
-    height:0;
     padding-bottom: 4%;
     -moz-border-radius: 4%; 
     -webkit-border-radius: 4%; 
