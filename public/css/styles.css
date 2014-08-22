@@ -9,14 +9,19 @@ body {
     padding:0px;
 }
 
-.pane {
-    height: 80%;
+.row {
+    margin: 0px;
 }
 
 .overlay {
     background-color: rgba(120, 118, 113, 0.5);
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
+    display: block;
+}
+
+.buffer {
+    padding-top:100px;
 }
 
 .landing {
@@ -25,7 +30,11 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-image: url("http://news.theregistrysf.com/wp-content/uploads/2013/04/DeAnza_MLC_Ext_03_A.jpg");
-    height: 110%;
+    height: 100%;
+}
+
+.landingcont {
+    height:100%;
 }
 
 @media only screen and (max-width: 320px) {
@@ -34,17 +43,17 @@ body {
 
 
 .logo {
-    margin-top:70px;
+    margin-top:50px;
     opacity: 0.7;
 }
 
 .tagline {
-    margin-top: 40px;
+    margin-top: 45px;
     /*width: 650px;*/
 }
 
 .tagline h1 {
-    font-size: 2.6em;
+    font-size: 2em;
     line-height: 0.8em;
     color:white;
     opacity: 1;
@@ -56,7 +65,7 @@ body {
     border: 4px solid rgba(255, 255, 255, 1);
     background-color: rgba(50, 33, 190, 0.7);
     color: white;
-    margin-top: 30px;
+    margin-top: 40px;
     display: inline-block;
 
     padding: 5px 30px;
@@ -97,7 +106,7 @@ body {
     /*background-color: rgba(34, 49, 59, 1);*/
     background-color: rgba(42, 60, 82, 1);
     box-shadow: 0 0 1em black;
-    border-top: rgb(214,214,214) 12px solid;
+    /*border-top: rgb(214,214,214) 12px solid;*/
     border-bottom: rgb(37, 38, 44) 10px solid;
 }
 
@@ -124,18 +133,17 @@ body {
     /*background-image: url("http://c.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/02/3026601-poster-p-1-10-steps-to-pulling-off-a-killer-hardware-hackathon.jpg");*/
     background-color: rgb(160, 176, 196);
     padding-top:30px;
-    padding-bottom:40px;
+    padding-bottom:60px;
 }
 
 .single_trait {
     /*background-color: white;*/
     text-align: center;
+    padding:0px;
 }
 
 .single_trait img {
-    height:100px;
-    width:100px;
-    background-color: #fff;
+    width:100%;
     opacity: 1;
 }
 
@@ -155,7 +163,6 @@ body {
     color: #000000;
     /* border-top: rgb(74, 77, 80) solid 10px; */
     /* box-shadow: 0 20px 20px -20px black; */
-    box-shadow: 0 0px 35px black;
     border-bottom: rgb(180, 180, 180) solid 10px;
 }
 
@@ -242,11 +249,6 @@ body {
 
 /*traits logo position settings*/
 .placehold {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    background-color: #fff;
-    opacity: 0.8;
     padding:45px;
     margin-top: 30px;
     margin-bottom:20px;
