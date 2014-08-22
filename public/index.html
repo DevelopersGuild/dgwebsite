@@ -198,6 +198,11 @@
               }
             });
             
+            var windowHeight = window.innerHeight;
+            if ($(this).scrollTop() > windowHeight) {
+              $('#gotop').show();
+            }
+            
             $("#gotop").click(function(){
                 $("html, body").animate({ scrollTop: 0}, 1000);
             });
