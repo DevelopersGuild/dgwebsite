@@ -11,7 +11,6 @@ body {
 
 .pane {
     height: 80%;
-
 }
 
 .overlay {
@@ -204,11 +203,22 @@ body {
 }
 
 .ping-us {
-    margin-top: 50px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+@media (min-width:992px) {
+    .ping-us {
+        margin-bottom: 10%;
+    }
+}
+
+.ping-us_title {
+    margin-bottom: 5%;
 }
 
 .ping-us_title > p {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 30px;
 }
 
@@ -218,14 +228,17 @@ body {
 }
 
 .ping-us_email {
-    height: 200px;
-    vertical-align: middle;
 }
 
 .ping-us_email > p {
-    height: 200px;
-    vertical-align: middle;
-    font-size: 1.5em;
+    font-size: 25px;
+    line-height: 100px;
+}
+
+@media (min-width:992px) {
+    .ping-us_email > p {
+        line-height: 175px;
+    }
 }
 
 /*traits logo position settings*/
