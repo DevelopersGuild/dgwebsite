@@ -192,7 +192,8 @@
             });
                
             $(window).scroll(function() {
-              if ($(this).scrollTop() > 2200){
+              var windowHeight = window.innerHeight;
+              if ($(this).scrollTop() > windowHeight){
                 $('#gotop').fadeIn("fast");
               } else {
                 $('#gotop').stop().fadeOut("fast");
