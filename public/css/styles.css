@@ -6,6 +6,7 @@ body {
     text-align: center;
     display: block;
     width:100%;
+    padding:0px;
 }
 
 .pane {
@@ -113,16 +114,10 @@ body {
 
 }
 
-.overlay_white {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
 .traits {
     text-align: center;
     top:200%;
-    height: 100%; /*why 110%?*/  
+   /* height: 100%;*/ /*why 110%?*/  
     /*I feel 75% is too narraw for two-lines logo -Buce*/
     background-size: cover;
     background-attachment: fixed;
@@ -130,23 +125,23 @@ body {
     background-position: center;
     /*background-image: url("http://c.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/02/3026601-poster-p-1-10-steps-to-pulling-off-a-killer-hardware-hackathon.jpg");*/
     background-color: rgb(160, 176, 196);
+    padding-top:30px;
+    padding-bottom:40px;
 }
 
 .single_trait {
-    padding:;
     /*background-color: white;*/
-    height: 50%;
     text-align: center;
 }
 
-.single_trait > img {
-    margin-top:50px;
-    border-radius: 100px;
+.single_trait img {
+    height:100px;
+    width:100px;
     background-color: #fff;
     opacity: 1;
 }
 
-.single_trait > p {
+.single_trait p {
     font-size: 2em;
     color:white;
     margin-top: 15px;
@@ -181,13 +176,16 @@ body {
     background-position: center;
 }
 
+.single_faq_wrapper {
+}
+
 .single_faq {
-    margin: 30px 0px;
+    margin:15px;
     padding:40px;
-    background-color: rgba(255,249,237, 0.8);
     border-radius: 5px;
     text-align: left;
     /*border: 10px solid rgba(0, 0, 0, 0.7);*/
+    background-color: rgba(255,249,237, 0.8);
 }
 
 .single_faq > p {
@@ -237,13 +235,10 @@ body {
     border-radius: 100px;
     background-color: #fff;
     opacity: 0.8;
-    padding-left: 35px;
-    padding-top: 35px;
-    padding-right: 35px;
-    padding-bottom: 35px;
-    margin-left: 110px;
+    padding:45px;
     margin-top: 30px;
-
+    margin-bottom:20px;
+    display: inline-block;
 }
 
 /* go to top button design*/
