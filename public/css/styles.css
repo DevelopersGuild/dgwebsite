@@ -157,15 +157,15 @@ body {
 
 .single_trait img {
     width:70%;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .single_trait p {
-    font-size: 2em;
+    font-size: 1.6em;
     color:white;
     margin-top: 15px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .faq_title {
@@ -183,7 +183,7 @@ body {
 
 .faq {
     /*height: 100%;*/
-    background-image: url("https://pdm.me/us.jpg");
+    background-image: url("../../resources/IMG_0613.JPG");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
