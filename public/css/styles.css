@@ -27,7 +27,7 @@ body {
 .landing {
     background-size: cover;
     background-position: center;
-    background-image: url("http://news.theregistrysf.com/wp-content/uploads/2013/04/DeAnza_MLC_Ext_03_A.jpg");
+    background-image: url("../../resources/The_MLC.jpg");
     height: 100%;
     min-height: 685px;
 }
