@@ -151,7 +151,7 @@ body {
 
 .single_trait img {
     width:70%;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .single_trait p {
@@ -164,8 +164,8 @@ body {
 
 .faq_title {
     background-color: rgb(255, 255, 255);
-    height: 30%;
-    padding-top:30px;
+    height: 40%;
+    padding-top: 2%;
     font-size: 2em;
     font-weight: 300;
     color: #e91e63;
