@@ -107,15 +107,13 @@ body {
 }
 
 .intro {
-    top:100%;
-    padding: 100px 0px 85px 0px;
-    font-size: 1em;
+    padding: 100px 0px 90px 0px;
     color:white;
     /*background-color: rgba(34, 49, 59, 1);*/
     background-color: rgba(42, 60, 82, 1);
     box-shadow: inset 0 1em 1em -1em black;
     /*border-top: rgb(214,214,214) 12px solid;*/
-    border-bottom: rgb(37, 38, 44) 5px solid;
+    border-bottom: rgb(37, 38, 44) 3px solid;
 }
 
 .suave {
@@ -146,8 +144,8 @@ body {
     background-position: center;
     /*background-image: url("http://c.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/02/3026601-poster-p-1-10-steps-to-pulling-off-a-killer-hardware-hackathon.jpg");*/
     background-color: rgb(160, 176, 196);
-    padding-top:60px;
-    padding-bottom:60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     box-shadow: inset 0 -1em 1em -1em black;
 }
 
@@ -159,11 +157,10 @@ body {
 
 .single_trait img {
     max-width: 80%;
-    opacity: 1;
 }
 
 .single_trait p {
-    font-size: 1.6em;
+    font-size: 1.5em;
     color:white;
     margin-top: 15px;
     letter-spacing: 1px;
@@ -171,19 +168,23 @@ body {
 }
 
 .faq_title {
-    background-color: rgb(255, 255, 255);
-    height: 40%;
-    padding-top: 2%;
-    font-size: 2em;
+    background-color: white;
+    font-size: 2.25em;
+    padding: 100px 0px;
     font-weight: 300;
     color: #e91e63;
     /* border-top: rgb(74, 77, 80) solid 10px; */
-    /* box-shadow: 0 20px 20px -20px black; */
-    border-bottom: rgb(220, 220, 220) solid 5px;
+    /* box-shadow: 0 20px 20px -20px white; */
+    /* border-bottom: rgb(220, 220, 220) solid 5px; */
+}
+
+.faq_title p {
+    margin: 0px;
 }
 
 
 .faq {
+    box-shadow: inset 0 0 20px black;
     /*height: 100%;*/
     background-image: url("../../resources/IMG_0613.JPG");
     background-size: cover;
@@ -197,15 +198,15 @@ body {
 .single_faq {
     margin:15px;
     padding:40px;
-    border-radius: 5px;
+    border-radius: 3px;
     text-align: left;
     /*border: 10px solid rgba(0, 0, 0, 0.7);*/
-    background-color: rgba(228, 234, 241, 0.8)
+    background-color: rgba(228, 234, 241, 0.7)
 }
 
 .single_faq > p {
-    font-size: 1.2em;
-    line-height: 1.8;
+    font-size: 1.25em;
+    line-height: 1.75;
     color:black;
 }
 
@@ -234,7 +235,7 @@ body {
 }
 
 .ping-us_title > p {
-    font-size: 2.5em;
+    font-size: 2.175em;
     margin-bottom: 30px;
 }
 
@@ -247,8 +248,8 @@ body {
 }
 
 .ping-us_email > p {
-    font-size: 25px;
-    line-height: 100px;
+    font-size: 25px; /* Specified in pixels to align properly with 200px img. */
+    line-height: 100px; /* img alignment */
 }
 
 @media (min-width:992px) {
