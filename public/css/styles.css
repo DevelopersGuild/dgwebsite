@@ -101,6 +101,7 @@ body {
 
 .intro {
     top:100%;
+    padding: 100px 0px 85px 0px;
     font-size: 1em;
     color:white;
     /*background-color: rgba(34, 49, 59, 1);*/
@@ -114,10 +115,10 @@ body {
     text-align: left;
     font-size: 1.45em;
     font-weight:300;
-    padding: 50px 0px;
     margin: auto;
     /*border-bottom: 10px solid gray;*/
     display: inline-block;
+    text-align: center;
 
 }
 
@@ -143,7 +144,7 @@ body {
 }
 
 .single_trait img {
-    width:100%;
+    width:70%;
     opacity: 1;
 }
 
@@ -158,6 +159,7 @@ body {
 .faq_title {
     background-color: rgb(255, 255, 255);
     height: 30%;
+    padding-top:30px;
     font-size: 2em;
     font-weight: 300;
     color: #000000;
@@ -166,12 +168,6 @@ body {
     border-bottom: rgb(180, 180, 180) solid 10px;
 }
 
-/*.faq_title > h2 {
-    margin-top: 50px;
-    font-size: 2em;
-    color: #e91e63;
-}
-*/
 
 .faq {
     /*height: 100%;*/
@@ -190,7 +186,7 @@ body {
     border-radius: 5px;
     text-align: left;
     /*border: 10px solid rgba(0, 0, 0, 0.7);*/
-    background-color: rgba(255,249,237, 0.8);
+    background-color: rgba(228, 234, 241, 0.8)
 }
 
 .single_faq > p {
@@ -249,7 +245,6 @@ body {
 
 /*traits logo position settings*/
 .placehold {
-    padding:45px;
     margin-top: 30px;
     margin-bottom:20px;
     display: inline-block;
