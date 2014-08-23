@@ -128,6 +128,12 @@ body {
 
 }
 
+@media (max-width:1083px) {
+    .suave {
+        width: 80%;
+    }
+}
+
 .traits {
     text-align: center;
     top:200%;
@@ -139,7 +145,7 @@ body {
     background-position: center;
     /*background-image: url("http://c.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/02/3026601-poster-p-1-10-steps-to-pulling-off-a-killer-hardware-hackathon.jpg");*/
     background-color: rgb(160, 176, 196);
-    padding-top:30px;
+    padding-top:60px;
     padding-bottom:60px;
 }
 
