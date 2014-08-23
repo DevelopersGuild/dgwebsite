@@ -112,7 +112,7 @@ body {
     color:white;
     /*background-color: rgba(34, 49, 59, 1);*/
     background-color: rgba(42, 60, 82, 1);
-    box-shadow: 0 0 1em black;
+    box-shadow: inset 0 1em 1em -1em black;
     /*border-top: rgb(214,214,214) 12px solid;*/
     border-bottom: rgb(37, 38, 44) 10px solid;
 }
@@ -147,6 +147,7 @@ body {
     background-color: rgb(160, 176, 196);
     padding-top:60px;
     padding-bottom:60px;
+    box-shadow: inset 0 -1em 1em -1em black;
 }
 
 .single_trait {
