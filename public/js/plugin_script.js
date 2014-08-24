@@ -46,7 +46,6 @@ $("#gotop").click(function(){
     $("html, body").animate({ scrollTop: 0}, 1000);
 });
 
-<<<<<<< Updated upstream
 // iOS detection from http://stackoverflow.com/questions/9038625/detect-if-device-is-ios?lq=1
 window.iOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
 if (window.iOS) {
@@ -59,7 +58,5 @@ if (window.iOS) {
     // iOS doesn't support "background-attachment: fixed," and, in fact, does something weird, instead.
     $(".fixed-background").removeClass("fixed-background");
 }
-=======
 
 //MODAL
->>>>>>> Stashed changes
