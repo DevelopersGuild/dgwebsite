@@ -197,7 +197,7 @@ and (max-device-width : 1024px) {
     margin: 0px;
     font-size: 2.25em;
     font-weight: 300;
-    color: gb(42, 60, 82); /*#e91e63;*/
+    color: #424242;
 }
 
 .faq {
@@ -257,6 +257,7 @@ and (max-device-width : 1024px) {
 .ping-us_title > p {
     font-size: 2.25em;
     font-weight: 300;
+    color: #424242;
 }
 
 .ping-us_email {
