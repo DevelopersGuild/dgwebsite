@@ -51,14 +51,13 @@ body {
 
 
 .logo {
-    margin-top:50px;
-    opacity: 0.7;
+    margin-top:20px;
 }
 
 .logo > img {
     height: 35vh;
     max-height: 320px;
-    min-height: 240px;
+    min-height: 300px;
     display: block;
     margin: 0 auto;
 }
@@ -172,7 +171,7 @@ body {
     font-size: 2.25em;
     padding: 100px 0px;
     font-weight: 300;
-    color: #e91e63;
+    color: rgb(42, 60, 82); /*#e91e63;*/
     /* border-top: rgb(74, 77, 80) solid 10px; */
     /* box-shadow: 0 20px 20px -20px white; */
     /* border-bottom: rgb(220, 220, 220) solid 5px; */
@@ -298,8 +297,9 @@ body {
 /*/////////MODAL DIALOG/////////*/
 #modal {
     width:70%;
-    border: 10px solid gray;
+    border: 10px solid rgba(180,180,180,0.4);
     background-color: rgb(253, 255, 240);
+    background-clip: padding-box;
     position:absolute;
     left:0;
     right:0;

@@ -8,7 +8,7 @@ $(window).load(function() {
     });
 
     $('#modal').jqm({
-      trigger: 'div#joinbutton'
+      trigger: 'button#joinbutton'
     });
 
     // parallax code. to optimize for mobile devices, this has been temporarily deactivated.
