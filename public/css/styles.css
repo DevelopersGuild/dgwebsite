@@ -297,6 +297,7 @@ and (max-device-width : 1024px) {
     text-align: left;
     padding:50px;
     line-height: 4em;
+    border-radius: 15px;
 }
 
 #modal a {
@@ -307,11 +308,15 @@ and (max-device-width : 1024px) {
     cursor: pointer;
 }
 
-#modal img {
+.close-button {
     opacity: 0.5;
 }
 
-#modal img:hover {
+.close-button:hover {
+    opacity: 0.8;
+}
+
+.close-button:active {
     opacity: 1.0;
 }
 
