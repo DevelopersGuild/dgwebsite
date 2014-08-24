@@ -24,6 +24,10 @@ body {
     padding-top:100px;
 }
 
+.fixed-background {
+    background-attachment: fixed;
+}
+
 .landing {
     background-size: cover;
     background-position: center;
