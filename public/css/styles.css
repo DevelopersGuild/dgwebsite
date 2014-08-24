@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
 }
 
 .overlay {
-    background-color: rgba(120, 118, 113, 0.5);
+    background-color: rgba(34, 26, 6, 0.5);
     width: 100%;
     /*height: 100%;*/
     display: block;
@@ -24,17 +25,24 @@ body {
     padding-top:100px;
 }
 
-.landing {
-    top:0%;
-    background-size: cover;
+.fixed-background {
     background-attachment: fixed;
+}
+
+
+/*////////LANDING PAGE////////*/
+
+.landing {
+    background-size: cover;
     background-position: center;
-    background-image: url("http://news.theregistrysf.com/wp-content/uploads/2013/04/DeAnza_MLC_Ext_03_A.jpg");
+    background-image: url("../../resources/The_MLC.jpg");
     height: 100%;
+    min-height: 685px;
 }
 
 .landingcont {
     height:100%;
+    margin-top: 10%;
 }
 
 @media only screen and (max-width: 320px) {
@@ -43,19 +51,21 @@ body {
 
 
 .logo {
-    margin-top:50px;
-    opacity: 0.7;
+    margin-top:20px;
 }
 
 .logo > img {
     height: 35vh;
     max-height: 320px;
-    min-height: 180px;
+    min-height: 300px;
+    display: block;
+    margin: 0 auto;
 }
 
 .tagline {
-    margin-top: 45px;
+    margin-top: 25px;
     /*width: 650px;*/
+    text-shadow: 2px 2px 3px rgb(57, 57, 57);
 }
 
 .tagline h1 {
@@ -66,33 +76,23 @@ body {
     font-weight: 300;
 }
 
-.landing .button {
-/*    border-radius: 5px;*/
-    border: 4px solid rgba(255, 255, 255, 1);
-    background-color: rgba(50, 33, 190, 0.7);
-    color: white;
-    margin-top: 40px;
-    display: inline-block;
-
-    padding: 5px 30px;
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
-    background-color: #60B044;
-    background-image: linear-gradient(#8ADD6D, #60B044);
-    background-repeat: repeat-x;
-    text-align: center;
-    font-weight: bold;
-    vertical-align: middle;
-    cursor: pointer;
-    font: 28px/1.7 Helvetica;
-    border-radius: 5px;
-    width: 250px;
-    color: white;
-    margin-top: 30px;
-    display: inline-block;
+.slides li {
+    text-transform: uppercase;
 }
 
-.landing .button:hover {
-    background-color: green;
+.landing #joinbutton {
+    margin-top:30px;
+    font-size:25px;
+    padding: 21px 37px;
+    background-clip: padding-box;
+    border: solid 5px rgba(255,255,255, 0.5);
+    box-shadow: 0px 0px 2px 2px rgba(50,50,50, 0.4);
+    transition: background-color 0.2s;
+}
+
+.landing #joinbutton:hover {
+    background-color: #61CC4C;
+    transition: background-color 0.2s;
 }
 
 /*override flexslider style*/
@@ -105,16 +105,16 @@ body {
     font-size:1.0em;
 }
 
+/*////////INTRO SECTION////////*/
+
 .intro {
-    top:100%;
-    padding: 100px 0px 85px 0px;
-    font-size: 1em;
+    padding: 100px 0px 90px 0px;
     color:white;
     /*background-color: rgba(34, 49, 59, 1);*/
     background-color: rgba(42, 60, 82, 1);
-    box-shadow: 0 0 1em black;
+    box-shadow: inset 0 1em 1em -1em black;
     /*border-top: rgb(214,214,214) 12px solid;*/
-    border-bottom: rgb(37, 38, 44) 10px solid;
+    border-bottom: rgb(37, 38, 44) 3px solid;
 }
 
 .suave {
@@ -125,9 +125,19 @@ body {
     /*border-bottom: 10px solid gray;*/
     display: inline-block;
     text-align: center;
-
 }
 
+.suave p {
+    text-shadow: 2px 2px 3px black;
+}
+
+@media (max-width:1083px) {
+    .suave {
+        width: 80%;
+    }
+}
+
+/*/////////TRAITS SECTION//////////*/
 .traits {
     text-align: center;
     top:200%;
@@ -139,96 +149,109 @@ body {
     background-position: center;
     /*background-image: url("http://c.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/02/3026601-poster-p-1-10-steps-to-pulling-off-a-killer-hardware-hackathon.jpg");*/
     background-color: rgb(160, 176, 196);
-    padding-top:30px;
-    padding-bottom:60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    box-shadow: inset 0 -1em 1em -1em black;
 }
 
 .single_trait {
     /*background-color: white;*/
     text-align: center;
-    padding:0px;
+    padding: 20px;
 }
 
 .single_trait img {
-    width:70%;
-    opacity: 0.8;
+    max-width: 80%;
+    margin-bottom: 20px;
 }
 
 .single_trait p {
-    font-size: 2em;
+    font-size: 1.5em;
     color:white;
     margin-top: 15px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 200;
+    text-shadow: 2px 2px 3px rgb(57, 57, 57);
 }
 
+
+/*/////////FAQ SECTION/////////*/
 .faq_title {
-    background-color: rgb(255, 255, 255);
-    height: 35%;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    font-size: 2em;
+
+    background-color: white;
+    font-size: 2.25em;
+    padding: 100px 0px;
     font-weight: 300;
-    color: #e91e63;
-    border-top: rgb(74, 77, 80) solid 10px; */
-    box-shadow: 0 20px 20px -20px black; */
-    border-bottom: rgb(180, 180, 180) solid 10px;
-    
+    color: rgb(42, 60, 82); /*#e91e63;*/
+    /* border-top: rgb(74, 77, 80) solid 10px; */
+    /* box-shadow: 0 20px 20px -20px white; */
+    /* border-bottom: rgb(220, 220, 220) solid 5px; */
+}
+
+.faq_title p {
+    margin: 0px;
+
 }
 
 
 .faq {
+    box-shadow: inset 0 0 20px black;
     /*height: 100%;*/
-    background-image: url("https://pdm.me/us.jpg");
+    background-image: url("../../resources/us-720p.jpg");
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+    .faq {
+        background-image: url("../../resources/us-1920p.jpg");
+    }
 }
 
 .single_faq_wrapper {
 }
 
 .single_faq {
-    margin:15px;
-    padding:40px;
-    border-radius: 5px;
+    margin-bottom:15px;
+    padding: 15px 15px 5px 15px;
+    border-radius: 3px;
     text-align: left;
     /*border: 10px solid rgba(0, 0, 0, 0.7);*/
-    background-color: rgba(228, 234, 241, 0.8)
+    background-color: rgba(228, 234, 241, 0.7)
 }
 
 .single_faq > p {
-    font-size: 1.2em;
-    line-height: 1.8;
+    font-size: 1.25em;
+    line-height: 1.75;
     color:black;
 }
 
 .faq_q {
-    border-left: 8px solid rgb(92, 135, 222);
-    padding-left: 10px;
+    border-left: 4px solid rgb(92, 135, 222);
+    padding-left: 8px;
+    /*padding: 0 0 10px;*/
 }
 
 .faq_a {
     font-weight: 300;
 }
 
+/*/////////////PING US SECTION///////////////*/
 .ping-us {
-    margin-top: 10%;
-    margin-bottom: 5%;
+    padding: 40px 0;
+    /*margin-top: 10%;
+    margin-bottom: 5%;*/
 }
 
-@media (min-width:992px) {
-    .ping-us {
-        margin-bottom: 10%;
-    }
-}
+/**/
 
 .ping-us_title {
     margin-bottom: 5%;
 }
 
 .ping-us_title > p {
-    font-size: 2.5em;
+    font-size: 2.175em;
     margin-bottom: 30px;
 }
 
@@ -241,8 +264,8 @@ body {
 }
 
 .ping-us_email > p {
-    font-size: 25px;
-    line-height: 100px;
+    font-size: 25px; /* Specified in pixels to align properly with 200px img. */
+    line-height: 100px; /* img alignment */
 }
 
 @media (min-width:992px) {
@@ -251,6 +274,11 @@ body {
     }
 }
 
+@media (max-width:320px) {
+    .ping-us_email > p {
+        font-size: 20px;
+    }
+}
 /*traits logo position settings*/
 .placehold {
     margin-top: 30px;
@@ -262,15 +290,109 @@ body {
 #gotop {
     display: none;
     position: fixed;
-    width: 4%;
-    height:0;
-    opacity: 0.2;
+    width: 4vmax;
+    height: 4vmax;
+    opacity: 0.3;
     right: 20px;
     bottom: 20px;
     background-color: #90a4ae;
     cursor: pointer;
-    padding-bottom: 4%;
     -moz-border-radius: 4%; 
     -webkit-border-radius: 4%; 
     border-radius: 100%;
+}
+
+/*/////////MODAL DIALOG/////////*/
+#modal {
+    width:70%;
+    border: 10px solid rgba(180,180,180,0.4);
+    background-color: rgb(253, 255, 240);
+    background-clip: padding-box;
+    position:absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    display: none;
+    top:30%;
+    text-align: left;
+    padding:50px;
+    line-height: 4em;
+}
+
+#modal a {
+    position:absolute;
+    top:0;
+    right:0;
+    margin:10px;
+    cursor: pointer;
+}
+
+#modal img {
+    opacity: 0.5;
+}
+
+#modal img:hover {
+    opacity: 1.0;
+}
+
+.overlay_faq {
+    padding: 80px 0;
+}
+
+.faq-container {
+    width: 60%;
+}
+
+/********IPHONE 5 COLUMN FIX******/
+
+@media screen (max-width: 320px) {
+
+}
+
+@media screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .overlay {
+        padding: 0;
+    }
+
+    .single_faq {
+        padding: 15px 15px 5px 15px;
+    }
+
+    .single_faq > p {
+        line-height: 1.3;
+        font-size: 1.2em;
+    }
+
+    .col-sm-6 {
+        padding: 0;
+    }
+
+    .overlay_faq {
+        padding: 10px 0;
+    }
+
+    .faq-container {
+        width: 90%;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    .overlay {
+
+    }
+
+   .faq-container {
+    width: 80%;
+   }
+
+   .single_faq {
+        padding: 15px 15px 5px 15px;
+    }
 }

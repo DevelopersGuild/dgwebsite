@@ -1,7 +1,9 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="../resources/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="../resources/flexslider/flexslider.css">
+        <link rel="stylesheet" href="../resources/jqModal.css">
         <link rel="stylesheet" href="css/styles.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../resources/animate.min.css">
@@ -13,11 +15,11 @@
 
         <div class="container">
 
-            <div class="row landing">
+            <div class="row landing fixed-background">
                 <div class="row overlay"><div class="col-md-6 col-md-offset-3">
                     <div class="landingcont">
                         <div class="logo">
-                            <img src="http://placehold.it/320x240" alt="">
+                            <img class="img-responsive" src="../resources/dglogo.svg" alt="">
                         </div>
                         <div class="tagline">
                             <!-- <h1>Developer's Guild is <span style="font-style:italic">the</span> community for hacking on projects at De Anza College.</h1>  -->
@@ -32,9 +34,10 @@
                             <h1>at De Anza College.</h1>
 
                         </div>
-                        <a href><div class="button">
+                        <!-- <a href><div id="joinbutton">
                             <h2>JOIN US</h2>
-                        </div></a>
+                        </div></a> -->
+                        <button id="joinbutton" class="btn btn-lg btn-primary">JOIN US</button>
                     </div>
                 </div></div> 
             </div>
@@ -43,7 +46,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <div class="suave wow fadeInLeft">
                         <p>Developer's Guild is <span style="font-style:italic">the</span> community for hacking on projects at De Anza College.</p>
-                        <p>We gather students at De Anza College to build new apps and software that they dream up.</p>
+                        <p>We gather students at De Anza College to build the apps and software that they dream up.</p>
                     </div>
                    <!--  <div class="col-md-6 suave wow fadeInRight"><p>We gather students at De Anza College to build new apps and software that they dream up.</p>
                     </div> -->
@@ -51,121 +54,129 @@
             </div>
 
             <div class="row traits">
-                <div class="col-md-4 single_trait">
-                    <div class="placehold img-responsive">
-                       <img src="../resources/deanza.png" alt="">
+                <div class="col-sm-10 col-sm-offset-1">
+                <div class="col-sm-4 single_trait">
+                    <div class="img-responsive">
+                       <img src="../resources/deanza.svg" alt="">
                     </div>
-                    <div><p>Every Week <br> at De Anza College</p></div>
+                    <div><p>Weekly <br> at De Anza College</p></div>
                 </div>
-                <div class="col-md-4 single_trait">
-                    <div class="placehold img-responsive">
-                       <img src="../resources/tools.png" alt="">
+                <div class="col-sm-4 single_trait">
+                    <div class="img-responsive">
+                       <img src="../resources/tools.svg" alt="">
                     </div>
                     <div><p>Create and <br> Join Projects</p></div>
                 </div>
-                <div class="col-md-4 single_trait">
-                    <div class="placehold img-responsive">
-                       <img src="../resources/friends.png" alt="">
+                <div class="col-sm-4 single_trait">
+                    <div class="img-responsive">
+                       <img src="../resources/friends.svg" alt="">
                     </div>
                     <div><p>Make <br> Friends</p></div>
+                </div>
                 </div>
             </div>
             
             <div class="row faq_title">
-               <div class="wow fadeInLeft" style="margin-top: 15px; padding-top: 40px;">
+               <div class="wow fadeInLeft">
                  <p>Frequently Asked Questions</p>
                </div>
             </div>
             
-            <div class="faq">
-                <div class="row overlay">
-                <div class="col-md-10 col-md-offset-1" style="margin-top: 10px;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: I don't have a programming background.  Can I join?</p>
-                                <p class="faq_a">A: Yes!  There are many things that we need help with, including user interface design, artwork, and team management.  Of course, any programming experience you do have will help you communicate with the team.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: Am I too advanced for this club?</p>
-                                <p class="faq_a">A: Possibly!</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: How involved do I need to be?</p>
-                                <p class="faq_a">A: TODO</p>
+            <div class="faq fixed-background"><div class="overlay">
+                <div class="container faq-container">
+                    <div class="row overlay_faq">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: I don't have a programming background.  Can I join anyway?</p>
+                                    <p class="faq_a">A: Yes!  There are many things that we need help with, including user interface design, artwork, and team management.  Of course, any programming experience you do have will help you communicate with the team.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: How can I find people work on my project?</p>
-                                <p class="faq_a">A: Come to one of our meetings and ask us!</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: I don't have any ideas for my own projects.  Or, I don't want to make a new project.  Is that okay?</p>
-                                <p class="faq_a">A: Of course.</p>
+                            <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: How involved do I need to be?</p>
+                                    <p class="faq_a">A: As with joining any club, the amount of time you commit is up to you.  However, the more you contribute to your group's development efforts, the more connected you will feel with your group.</p>
+                                </div>
                             </div>
+                    
                         </div>
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: Do I have to be a De Anza College student to join?</p>
-                                <p class="faq_a">A: Yes.  We are an incorporated De Anza College club, and we may only accept local students.</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: What projects can I build?</p>
-                                <p class="faq_a">A: TODO</p>
+                        <div class="row">
+                             <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: What projects can I build?</p>
+                                    <p class="faq_a">A: You can build websites, mobile applications, games, whatever you want!  We are here to support your ambitions!</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: I don't have any programming experience.  Will you help me learn?</p>
-                                <p class="faq_a">A: Not ourselves, but we can give you many resources that other students have used to successfully learn basic programming.  Also, being around other programmers more skilled than yourself will help you to grow in your programming abilities.</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: How often do you meet?</p>
-                                <p class="faq_a">A: Every week.</p>
-                            </div>    
-                        </div>
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: I don't have a laptop.  Is that okay?</p>
-                                <p class="faq_a">A: It depends on what project you wish to work on.  We can provide you with school desktop computers that run Windows.  But some projects, for example iOS, cannot be developed on Windows computers.</p>
+                            <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: I have an idea for a proejct!  How can I find people to help me work on it?</p>
+                                    <p class="faq_a">A: Come to one of our meetings and ask the officers.  That's the quickest way!</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="single_faq">
-                                <p class="faq_q">Q: Is there a fee for joining?</p>
-                                <p class="faq_a">A: No.  Developers' Guild is free for all De Anza College students.</p>
-                            </div>    
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: I don't have any programming experience.  Will you help me learn?</p>
+                                    <p class="faq_a">A: We won't tutor you ourselves, but we can give you many resources that other students have used to successfully learn basic programming.  Also, being around other programmers more skilled than yourself will help you to grow in your own programming abilities.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: I don't have any ideas for my own projects.  Or, I don't want to make a new project.  Is that still okay?</p>
+                                    <p class="faq_a">A: Of course it is!  Don't feel pressured to do something you don't want to do.  You may always join an existing Guild project and meet the people in that team.</p>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="row">
+                             <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: How often do you meet?</p>
+                                    <p class="faq_a">A: Every week.  Our room number and time change every quarter to accomodate people's changing schedules, but we generally occupy the AT building on campus.  Ping us or subscribe to our mailing list for more specific information each quarter.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: I don't have a laptop.  Is that okay?</p>
+                                    <p class="faq_a">A: It depends on which project you wish to work on.  Many students use the school desktop computers that run Windows for their projects.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: Do I have to be a De Anza College student to join?</p>
+                                    <p class="faq_a">A: Yes.  We are an incorporated De Anza College club, and we may only accept local students.</p>
+                                </div>    
+                            </div>
+
+                             <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: Is there a fee for joining?</p>
+                                    <p class="faq_a">A: No.  Developers' Guild is free for all De Anza College students and will always remain that way.</p>
+                                </div>    
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="single_faq">
+                                    <p class="faq_q">Q: Am I too advanced for this club?</p>
+                                    <p class="faq_a">A: You might be more technically advanced, but what we offer are teams with a purpose.</p>
+                                </div>
+                            </div>
+                        </div>
+                   
                     </div>
                 </div>
-                </div>
-            </div>
+            </div></div>
 
             <div class="row ping-us">
                 <div class="col-md-8 col-md-offset-2">
@@ -173,7 +184,7 @@
                         <p>Ping Us!</p>
                     </div>
                     <div class="col-md-6 ping-us_hi">
-                        <img src="http://fc05.deviantart.net/fs71/f/2010/365/2/f/smiling_holmes_by_hallpen-d3637e4.jpg" width="200" height="200" alt="">
+                        <img src="../resources/smiling_holmes_by_hallpen.jpg" width="200" height="200" alt="">
                     </div>
                     <div class="col-md-6 ping-us_email">
                         <p><a href="mailto:contact@developersguild.net">contact@developersguild.net</a></p>
@@ -181,61 +192,53 @@
                 </div>
             </div>
  
+<<<<<<< HEAD
             <div id="gotop">
                 <img src="../resources/up.png" style="padding-top: 30%; max-width: 100%; height:auto ">  
+=======
+            <div>
+                <img id="gotop" src="../resources/up.png">
+>>>>>>> FETCH_HEAD
             </div>
-
         </div>
-
-
+        
+        <!--
+        <div class="modalContainer">
+        </div>
+        -->
+        <div id="modal">
+            <a><img src="../resources/close-button.png" alt=""></a>
+            <form role="form">
+              <div class="form-group">
+                <h3>Sign up for our mailing list!</h3>
+                <p>Email address</p>
+                <input type="email" class="form-control" id="email">
+              </div>
+<!--
+               <div class="form-group">
+                <p>First Name</p>
+                <input type="text" class="form-control" id="firstName">
+              </div>
+              <div class="form-group">
+                <p>Last Name</p>
+                <input type="text" class="form-control" id="lastName">
+              </div>
+              <div class="form-group">
+                <p>Mobile Number</p>
+                <input type="text" class="form-control" id="mobileNumber" placeholder="(###)-###-####">
+              </div>
+-->
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
 
         <script src="../resources/jqueryLibs/jquery-2.1.1.min.js"></script>
         <script src="../resources/flexslider/jquery.flexslider-min.js"></script>
         <script src="../resources/bootstrap/bootstrap.min.js"></script>
+        <script src="../resources/jqModal.js"></script>
         <script src="../resources/wow.min.js"></script>
+        <script src="js/plugin_script.js"></script>
         <!--<script src="../resources/jquery.parallax-1.1.3.js"></script>-->
-        <script>
-            new WOW().init();
-            $(window).load(function() {
-                $('.flexslider').flexslider({
-                    slideshowSpeed: 700,
-                    animationSpeed: 50,
-                    controlNav: false,
-                    directionNav: false, 
-                });
-
-                /*$('.landing').parallax("30%", .5);
-                $('.traits').parallax("30%", .5);
-                $('.faq').parallax("30%", .5);*/
-            });
-
-            
-            //go to top button function
-            $("#gotop").mouseenter(function(){
-               $("#gotop").fadeTo("fast", 0.8);
-            }); 
-            $("#gotop").mouseleave(function(){
-               $("#gotop").fadeTo("fast", 0.3);  
-            });
-               
-            $(window).scroll(function() {
-              var windowHeight = window.innerHeight;
-              if ($(this).scrollTop() > windowHeight){
-                $('#gotop').fadeIn("fast");
-              } else {
-                $('#gotop').stop().fadeOut("fast");
-              }
-            });
-            
-            var windowHeight = window.innerHeight;
-            if ($(this).scrollTop() > windowHeight) {
-              $('#gotop').show();
-            }
-            
-            $("#gotop").click(function(){
-                $("html, body").animate({ scrollTop: 0}, 1000);
-            });
-        </script>
     </body>
 
 </html>

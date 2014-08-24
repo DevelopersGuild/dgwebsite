@@ -4,15 +4,19 @@
 		"selected_items":
 		[
 			[
-				"border",
-				"border-radius"
-			],
-			[
-				"backgr",
-				"background-color"
+				"padding",
+				"padding-top"
 			],
 			[
 				"back",
+				"background-size"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"backgr",
 				"background-color"
 			],
 			[
@@ -47,7 +51,15 @@
 			"file": "/Users/joshuapham/Documents/Web/DG website/public/index.html",
 			"settings":
 			{
-				"buffer_size": 8071,
+				"buffer_size": 11374,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "flexslider/flexslider.css",
+			"settings":
+			{
+				"buffer_size": 5213,
 				"line_ending": "Unix"
 			}
 		},
@@ -55,7 +67,7 @@
 			"file": "/Users/joshuapham/Documents/Web/DG website/public/css/styles.css",
 			"settings":
 			{
-				"buffer_size": 4104,
+				"buffer_size": 5222,
 				"line_ending": "Unix"
 			}
 		}
@@ -134,6 +146,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"buffer",
+			"img-circle",
+			"px",
+			"placehold",
+			"img",
+			"img-responsive",
+			"img",
+			"png",
+			"box-shadow",
 			"255",
 			"0",
 			" single_faq",
@@ -176,15 +197,15 @@
 					"file": "/Users/joshuapham/Documents/Web/DG website/public/index.html",
 					"settings":
 					{
-						"buffer_size": 8071,
+						"buffer_size": 11374,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								509,
-								509
+								1978,
+								1978
 							]
 						],
 						"settings":
@@ -298,7 +319,138 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 156.0,
+						"translation.y": 707.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "flexslider/flexslider.css",
+					"settings":
+					{
+						"buffer_size": 5213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3501,
+								3501
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 106.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -310,19 +462,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "/Users/joshuapham/Documents/Web/DG website/public/css/styles.css",
 					"settings":
 					{
-						"buffer_size": 4104,
+						"buffer_size": 5222,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								305,
-								305
+								3739,
+								3739
 							]
 						],
 						"settings":
@@ -436,7 +588,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 784.0,
+						"translation.y": 2401.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -472,7 +624,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.567822802198,
 			1.0
 		],
 		"rows":
