@@ -56,6 +56,8 @@ body {
     height: 35vh;
     max-height: 320px;
     min-height: 240px;
+    display: block;
+    margin: 0 auto;
 }
 
 .tagline {
@@ -199,7 +201,7 @@ body {
 }
 
 .single_faq {
-    margin:15px;
+    margin-bottom:15px;
     padding:40px;
     border-radius: 3px;
     text-align: left;
@@ -215,8 +217,8 @@ body {
 
 .faq_q {
     border-left: 8px solid rgb(92, 135, 222);
-    /*padding-left: 10px;*/
-    padding: 5px 0 0 10px;
+    padding-left: 10px;
+    /*padding: 0 0 10px;*/
 }
 
 .faq_a {
@@ -322,7 +324,7 @@ and (max-device-width : 480px) {
     }
 
     .single_faq {
-        padding: 5px 15px;
+        padding: 15px 15px 5px 15px;
     }
 
     .single_faq > p {
