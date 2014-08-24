@@ -1,7 +1,7 @@
 new WOW().init();
 $(window).load(function() {
     $('.flexslider').flexslider({
-        slideshowSpeed: 700,
+        slideshowSpeed: 1500,
         animationSpeed: 50,
         controlNav: false,
         directionNav: false, 
