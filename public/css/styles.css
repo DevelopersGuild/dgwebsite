@@ -284,20 +284,17 @@ body {
     border-radius: 100%;
 }
 
-.modalContainer {
-    display: none;
-    position:absolute;
-    margin-left:50%;
-    top:0%;
-    background: transparent;
-}
-
 #modal {
-    height:600px;
-    width:600px;
+    width:70%;
     border: 10px solid gray;
-    background-color: white;
-    position:relative;
-    margin-left:-50%;
-    top:100px;
+    background-color: rgb(253, 255, 240);
+    position:absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    display: none;
+    top:30%;
+    text-align: left;
+    padding:50px;
+    line-height: 4em;
 }
