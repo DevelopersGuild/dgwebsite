@@ -324,6 +324,14 @@ body {
     cursor: pointer;
 }
 
+#modal img {
+    opacity: 0.5;
+}
+
+#modal img:hover {
+    opacity: 1.0;
+}
+
 .overlay_faq {
     padding: 80px 0;
 }
