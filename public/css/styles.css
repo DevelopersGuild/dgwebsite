@@ -161,8 +161,17 @@ body {
 }
 
 .single_trait img {
-    max-width: 80%;
+    max-width: 70%;
     margin-bottom: 20px;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .single_trait img {
+        max-width: 80%;
+    }
 }
 
 .single_trait p {
