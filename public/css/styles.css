@@ -63,8 +63,9 @@ body {
 }
 
 .tagline {
-    margin-top: 45px;
+    margin-top: 25px;
     /*width: 650px;*/
+    text-shadow: 2px 2px 3px rgb(57, 57, 57);
 }
 
 .tagline h1 {
@@ -73,6 +74,10 @@ body {
     color:white;
     opacity: 1;
     font-weight: 300;
+}
+
+.slides li {
+    text-transform: uppercase;
 }
 
 .landing #joinbutton {
@@ -120,7 +125,10 @@ body {
     /*border-bottom: 10px solid gray;*/
     display: inline-block;
     text-align: center;
+}
 
+.suave p {
+    text-shadow: 2px 2px 3px black;
 }
 
 @media (max-width:1083px) {
@@ -154,6 +162,7 @@ body {
 
 .single_trait img {
     max-width: 80%;
+    margin-bottom: 20px;
 }
 
 .single_trait p {
@@ -216,8 +225,8 @@ body {
 }
 
 .faq_q {
-    border-left: 8px solid rgb(92, 135, 222);
-    padding-left: 10px;
+    border-left: 4px solid rgb(92, 135, 222);
+    padding-left: 8px;
     /*padding: 0 0 10px;*/
 }
 
@@ -232,11 +241,7 @@ body {
     margin-bottom: 5%;*/
 }
 
-/*@media (min-width:992px) {
-    .ping-us {
-        margin-bottom: 10%;
-    }
-}*/
+/**/
 
 .ping-us_title {
     margin-bottom: 5%;
@@ -315,7 +320,7 @@ body {
     padding: 80px 0;
 }
 
-.test {
+.faq-container {
     width: 60%;
 }
 
@@ -350,7 +355,7 @@ and (max-device-width : 480px) {
         padding: 10px 0;
     }
 
-    .test {
+    .faq-container {
         width: 90%;
     }
 }
@@ -364,11 +369,7 @@ and (max-device-width : 1024px) {
 
     }
 
-  /*  .test {
-        width: 80%;
-    }*/
-
-   .test {
+   .faq-container {
     width: 80%;
    }
 
