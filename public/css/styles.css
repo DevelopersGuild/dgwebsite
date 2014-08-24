@@ -316,6 +316,14 @@ body {
     line-height: 4em;
 }
 
+#modal a {
+    position:absolute;
+    top:0;
+    right:0;
+    margin:10px;
+    cursor: pointer;
+}
+
 .overlay_faq {
     padding: 80px 0;
 }

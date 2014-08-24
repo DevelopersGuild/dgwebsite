@@ -11,6 +11,9 @@ $(window).load(function() {
       trigger: 'button#joinbutton'
     });
 
+    $('#modal a').click(function() {
+      $('#modal').jqmHide();
+    });
     // parallax code. to optimize for mobile devices, this has been temporarily deactivated.
     /*$('.landing').parallax("30%", .5);
     $('.traits').parallax("30%", .5);
