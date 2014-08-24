@@ -295,21 +295,37 @@ and (max-device-width : 1024px) {
     display: none;
     top:30%;
     text-align: left;
-    padding:50px;
-    line-height: 4em;
+    padding: 40px;
     border-radius: 15px;
 }
 
-#modal a {
+#modal h3 {
+    margin: 0;
+}
+
+#modal > form {
+    margin: 0;
+}
+
+#modal .form-group {
+    margin: 0;
+}
+
+.sign-up {
+    padding-bottom: 1.75em;
+}
+
+.email-textedit {
+    padding-bottom: 1.75em;
+}
+
+.close-button {
+    opacity: 0.5;
     position:absolute;
     top:0;
     right:0;
     margin:10px;
     cursor: pointer;
-}
-
-.close-button {
-    opacity: 0.5;
 }
 
 .close-button:hover {
