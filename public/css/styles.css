@@ -29,6 +29,9 @@ body {
     background-attachment: fixed;
 }
 
+
+/*////////LANDING PAGE////////*/
+
 .landing {
     background-size: cover;
     background-position: center;
@@ -110,6 +113,8 @@ body {
     font-size:1.0em;
 }
 
+/*////////INTRO SECTION////////*/
+
 .intro {
     padding: 100px 0px 90px 0px;
     color:white;
@@ -137,6 +142,7 @@ body {
     }
 }
 
+/*/////////TRAITS SECTION//////////*/
 .traits {
     text-align: center;
     top:200%;
@@ -171,6 +177,8 @@ body {
     font-weight: 200;
 }
 
+
+/*/////////FAQ SECTION/////////*/
 .faq_title {
     background-color: white;
     font-size: 2.25em;
@@ -229,6 +237,7 @@ body {
     font-weight: 300;
 }
 
+/*/////////////PING US SECTION///////////////*/
 .ping-us {
     margin-top: 10%;
     margin-bottom: 5%;
@@ -291,6 +300,7 @@ body {
     border-radius: 100%;
 }
 
+/*/////////MODAL DIALOG/////////*/
 #modal {
     width:70%;
     border: 10px solid gray;
