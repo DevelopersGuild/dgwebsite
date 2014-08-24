@@ -37,7 +37,7 @@ body {
     background-position: center;
     background-image: url("../../resources/The_MLC.jpg");
     height: 100%;
-    min-height: 685px;
+    min-height: 720px;
 }
 
 .landingcont {
@@ -178,10 +178,7 @@ body {
 /*/////////FAQ SECTION/////////*/
 .faq_title {
     background-color: white;
-    font-size: 2.25em;
     padding: 100px 0px;
-    font-weight: 300;
-    color: rgb(42, 60, 82); /*#e91e63;*/
     /* border-top: rgb(74, 77, 80) solid 10px; */
     /* box-shadow: 0 20px 20px -20px white; */
     /* border-bottom: rgb(220, 220, 220) solid 5px; */
@@ -189,11 +186,13 @@ body {
 
 .faq_title p {
     margin: 0px;
+    font-size: 2.25em;
+    font-weight: 300;
+    color: rgb(42, 60, 82); /*#e91e63;*/
 }
 
-
 .faq {
-    box-shadow: inset 0 0 20px black;
+    box-shadow: inset 0 20px 20px -20px black, inset 0 -20px 20px -20px black;
     /*height: 100%;*/
     background-image: url("../../resources/us-720p.jpg");
     background-size: cover;
@@ -237,15 +236,12 @@ body {
 
 /*/////////////PING US SECTION///////////////*/
 .ping-us {
-    padding: 40px 0;
-    /*margin-top: 10%;
-    margin-bottom: 5%;*/
+    padding-top: 100px;
+    padding-bottom: 150px;
 }
 
-/**/
-
 .ping-us_title {
-    margin-bottom: 5%;
+    padding-bottom: 60px;
 }
 
 .ping-us_title > p {
@@ -262,13 +258,11 @@ body {
 }
 
 .ping-us_email > p {
-    font-size: 25px; /* Specified in pixels to align properly with 200px img. */
-    line-height: 100px; /* img alignment */
+    font-size: 1.5em;
 }
 
 @media (min-width:992px) {
     .ping-us_email > p {
-        line-height: 175px;
     }
 }
 
@@ -277,14 +271,8 @@ body {
         font-size: 20px;
     }
 }
-/*traits logo position settings*/
-.placehold {
-    margin-top: 30px;
-    margin-bottom:20px;
-    display: inline-block;
-}
 
-/* go to top button design*/
+/*/////////////GO TO TOP BUTTON SECTION///////////////*/
 #gotop {
     display: none;
     position: fixed;
@@ -343,10 +331,6 @@ body {
 
 /********IPHONE 5 COLUMN FIX******/
 
-@media screen (max-width: 320px) {
-
-}
-
 @media screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
@@ -386,11 +370,11 @@ and (max-device-width : 1024px) {
 
     }
 
-   .faq-container {
-    width: 80%;
-   }
+    .faq-container {
+        width: 80%;
+    }
 
-   .single_faq {
+    .single_faq {
         padding: 15px 15px 5px 15px;
     }
 }
