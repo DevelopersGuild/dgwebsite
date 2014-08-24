@@ -242,15 +242,16 @@ body {
 
 /*/////////////PING US SECTION///////////////*/
 .ping-us {
-    margin-top: 10%;
-    margin-bottom: 5%;
+    padding: 40px 0;
+    /*margin-top: 10%;
+    margin-bottom: 5%;*/
 }
 
-@media (min-width:992px) {
+/*@media (min-width:992px) {
     .ping-us {
         margin-bottom: 10%;
     }
-}
+}*/
 
 .ping-us_title {
     margin-bottom: 5%;
