@@ -5,6 +5,8 @@ $(window).load(function() {
         animationSpeed: 50,
         controlNav: false,
         directionNav: false, 
+        pauseOnAction: false,
+        touch: false,
     });
 
     $('#modal').jqm({
