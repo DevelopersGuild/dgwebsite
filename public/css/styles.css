@@ -254,13 +254,8 @@ and (max-device-width : 1024px) {
 }
 
 .ping-us_title > p {
-    font-size: 2.175em;
-    margin-bottom: 30px;
-}
-
-.ping-us_hi > img {
-    border-radius: 100px;
-    opacity: 0.8;
+    font-size: 2.25em;
+    font-weight: 300;
 }
 
 .ping-us_email {
@@ -268,17 +263,6 @@ and (max-device-width : 1024px) {
 
 .ping-us_email > p {
     font-size: 1.5em;
-}
-
-@media (min-width:992px) {
-    .ping-us_email > p {
-    }
-}
-
-@media (max-width:320px) {
-    .ping-us_email > p {
-        font-size: 20px;
-    }
 }
 
 /*/////////////GO TO TOP BUTTON SECTION///////////////*/
