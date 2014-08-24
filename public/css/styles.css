@@ -230,7 +230,8 @@ body {
 
 .faq_q {
     border-left: 8px solid rgb(92, 135, 222);
-    padding-left: 10px;
+    /*padding-left: 10px;*/
+    padding: 5px 0 0 10px;
 }
 
 .faq_a {
@@ -319,4 +320,40 @@ body {
     text-align: left;
     padding:50px;
     line-height: 4em;
+}
+
+.overlay_faq {
+    padding: 80px 0;
+}
+
+/********IPHONE 5 COLUMN FIX******/
+
+@media screen (max-width: 320px) {
+
+}
+
+@media screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .overlay {
+        padding: 0;
+    }
+
+    .single_faq {
+        padding: 5px 15px;
+    }
+
+    .single_faq > p {
+        line-height: 1.3;
+        font-size: 1.2em;
+    }
+
+    .col-sm-6 {
+        padding: 0;
+    }
+
+    .overlay_faq {
+        padding: 10px 0;
+    }
 }
