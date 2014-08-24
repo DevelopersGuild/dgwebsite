@@ -190,9 +190,16 @@ body {
 .faq {
     box-shadow: inset 0 0 20px black;
     /*height: 100%;*/
-    background-image: url("../../resources/IMG_0613.JPG");
+    background-image: url("../../resources/us-720p.jpg");
     background-size: cover;
     background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+    .faq {
+        background-image: url("../../resources/us-1920p.jpg");
+    }
 }
 
 .single_faq_wrapper {
