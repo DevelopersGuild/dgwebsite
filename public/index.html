@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="../resources/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="../resources/flexslider/flexslider.css">
+        <link rel="stylesheet" href="../resources/PgwModal/pgwmodal.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../resources/animate.min.css">
@@ -192,50 +193,10 @@
         <script src="../resources/jqueryLibs/jquery-2.1.1.min.js"></script>
         <script src="../resources/flexslider/jquery.flexslider-min.js"></script>
         <script src="../resources/bootstrap/bootstrap.min.js"></script>
+        <script src="../resources/PgwModal/pgwmodal.min.js"></script>
         <script src="../resources/wow.min.js"></script>
         <!--<script src="../resources/jquery.parallax-1.1.3.js"></script>-->
-        <script>
-            new WOW().init();
-            $(window).load(function() {
-                $('.flexslider').flexslider({
-                    slideshowSpeed: 700,
-                    animationSpeed: 50,
-                    controlNav: false,
-                    directionNav: false, 
-                });
-
-                /*$('.landing').parallax("30%", .5);
-                $('.traits').parallax("30%", .5);
-                $('.faq').parallax("30%", .5);*/
-            });
-
-            
-            //go to top button function
-            $("#gotop").mouseenter(function(){
-               $("#gotop").fadeTo("fast", 0.8);
-            }); 
-            $("#gotop").mouseleave(function(){
-               $("#gotop").fadeTo("fast", 0.3);  
-            });
-               
-            $(window).scroll(function() {
-              var windowHeight = window.innerHeight;
-              if ($(this).scrollTop() > windowHeight){
-                $('#gotop').fadeIn("fast");
-              } else {
-                $('#gotop').stop().fadeOut("fast");
-              }
-            });
-            
-            var windowHeight = window.innerHeight;
-            if ($(this).scrollTop() > windowHeight) {
-              $('#gotop').show();
-            }
-            
-            $("#gotop").click(function(){
-                $("html, body").animate({ scrollTop: 0}, 1000);
-            });
-        </script>
+        <script src="js/plugin_script.js"></script>
     </body>
 
 </html>
