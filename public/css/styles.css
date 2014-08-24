@@ -161,7 +161,7 @@ body {
 }
 
 .single_trait img {
-    max-width: 70%;
+    max-width: 60%;
     margin-bottom: 20px;
 }
 
@@ -197,7 +197,7 @@ and (max-device-width : 1024px) {
     margin: 0px;
     font-size: 2.25em;
     font-weight: 300;
-    color: rgb(42, 60, 82); /*#e91e63;*/
+    color: gb(42, 60, 82); /*#e91e63;*/
 }
 
 .faq {
@@ -230,7 +230,7 @@ and (max-device-width : 1024px) {
 .single_faq > p {
     font-size: 1.25em;
     line-height: 1.75;
-    color:black;
+    color: #424242;
 }
 
 .faq_q {
