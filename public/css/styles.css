@@ -164,14 +164,16 @@ body {
 
 .faq_title {
     background-color: rgb(255, 255, 255);
-    height: 40%;
-    padding-top: 2%;
+    height: 35%;
+    padding-top: 1%;
+    padding-bottom: 2%;
     font-size: 2em;
     font-weight: 300;
     color: #e91e63;
-    /* border-top: rgb(74, 77, 80) solid 10px; */
-    /* box-shadow: 0 20px 20px -20px black; */
+    border-top: rgb(74, 77, 80) solid 10px; */
+    box-shadow: 0 20px 20px -20px black; */
     border-bottom: rgb(180, 180, 180) solid 10px;
+    
 }
 
 
