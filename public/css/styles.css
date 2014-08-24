@@ -29,6 +29,9 @@ body {
     background-attachment: fixed;
 }
 
+
+/*////////LANDING PAGE////////*/
+
 .landing {
     background-size: cover;
     background-position: center;
@@ -110,6 +113,8 @@ body {
     font-size:1.0em;
 }
 
+/*////////INTRO SECTION////////*/
+
 .intro {
     padding: 100px 0px 90px 0px;
     color:white;
@@ -137,6 +142,7 @@ body {
     }
 }
 
+/*/////////TRAITS SECTION//////////*/
 .traits {
     text-align: center;
     top:200%;
@@ -171,6 +177,8 @@ body {
     font-weight: 200;
 }
 
+
+/*/////////FAQ SECTION/////////*/
 .faq_title {
     background-color: white;
     font-size: 2.25em;
@@ -190,9 +198,16 @@ body {
 .faq {
     box-shadow: inset 0 0 20px black;
     /*height: 100%;*/
-    background-image: url("../../resources/IMG_0613.JPG");
+    background-image: url("../../resources/us-720p.jpg");
     background-size: cover;
     background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+    .faq {
+        background-image: url("../../resources/us-1920p.jpg");
+    }
 }
 
 .single_faq_wrapper {
@@ -223,6 +238,7 @@ body {
     font-weight: 300;
 }
 
+/*/////////////PING US SECTION///////////////*/
 .ping-us {
     margin-top: 10%;
     margin-bottom: 5%;
@@ -285,22 +301,20 @@ body {
     border-radius: 100%;
 }
 
-.modalContainer {
-    display: none;
-    position:absolute;
-    margin-left:50%;
-    top:0%;
-    background: transparent;
-}
-
+/*/////////MODAL DIALOG/////////*/
 #modal {
-    height:600px;
-    width:600px;
+    width:70%;
     border: 10px solid gray;
-    background-color: white;
-    position:relative;
-    margin-left:-50%;
-    top:100px;
+    background-color: rgb(253, 255, 240);
+    position:absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    display: none;
+    top:30%;
+    text-align: left;
+    padding:50px;
+    line-height: 4em;
 }
 
 .overlay_faq {
