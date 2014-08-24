@@ -217,7 +217,7 @@ body {
 
 .single_faq {
     margin-bottom:15px;
-    padding:40px;
+    padding: 15px 15px 5px 15px;
     border-radius: 3px;
     text-align: left;
     /*border: 10px solid rgba(0, 0, 0, 0.7);*/
@@ -365,5 +365,27 @@ and (max-device-width : 480px) {
 
     .test {
         width: 90%;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+    .overlay {
+
+    }
+
+  /*  .test {
+        width: 80%;
+    }*/
+
+   .test {
+    width: 80%;
+   }
+
+   .single_faq {
+        padding: 15px 15px 5px 15px;
     }
 }
