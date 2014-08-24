@@ -180,13 +180,13 @@ and (max-device-width : 1024px) {
     margin-top: 15px;
     letter-spacing: 1px;
     font-weight: 200;
-    text-shadow: 2px 2px 3px rgb(57, 57, 57);
+    text-shadow: 2px 2px 3px rgba(57, 57, 57, 0.7);
 }
 
 
 /*/////////FAQ SECTION/////////*/
 .faq_title {
-    background-color: white;
+    background-color: #eceff1;
     padding: 100px 0px;
     /* border-top: rgb(74, 77, 80) solid 10px; */
     /* box-shadow: 0 20px 20px -20px white; */
@@ -245,6 +245,7 @@ and (max-device-width : 1024px) {
 
 /*/////////////PING US SECTION///////////////*/
 .ping-us {
+    background-color: #eceff1;
     padding-top: 100px;
     padding-bottom: 150px;
 }
