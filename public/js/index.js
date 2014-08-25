@@ -16,10 +16,6 @@ $(window).load(function() {
     $('#modal a').click(function() {
       $('#modal').jqmHide();
     });
-    // parallax code. to optimize for mobile devices, this has been temporarily deactivated.
-    /*$('.landing').parallax("30%", .5);
-    $('.traits').parallax("30%", .5);
-    $('.faq').parallax("30%", .5);*/
 });
 
 //go to top button function
@@ -63,5 +59,3 @@ if (window.iOS) {
     // iOS doesn't support "background-attachment: fixed," and, in fact, does something weird, instead.
     $(".fixed-background").removeClass("fixed-background");
 }
-
-//MODAL
