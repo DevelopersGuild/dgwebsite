@@ -68,12 +68,14 @@ body {
     text-shadow: 2px 2px 3px rgb(57, 57, 57);
 }
 
-.tagline h1 {
+.tagline span {
     font-size: 2em;
     line-height: 0.8em;
     color:white;
     opacity: 1;
     font-weight: 300;
+    display: block;
+    margin: .67em 0;
 }
 
 .slides li {
